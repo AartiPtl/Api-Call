@@ -3,7 +3,6 @@ import { Text, View} from 'react-native';
 
 const App = () => {
   const [data, setData] = useState(undefined);
-
   const getAPIData = async () => {
     // api call
     const url = "https://jsonplaceholder.typicode.com/posts/1";
