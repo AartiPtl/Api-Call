@@ -7,10 +7,11 @@ const Flat = () => {
 
     const [data, setData] = useState([]);
     const getAPIData = async () => {
-        const url = 'https://jsonplaceholder.typicode.com/comments?postId=1';
+        const url = 'http://localhost:3000/users';
         let result = await fetch(url);
         result = result.json();
-        setData(data);
+        setData(result);
+        console.log(data);
     }
 
     useEffect(() => {
